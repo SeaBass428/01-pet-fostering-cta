@@ -1,0 +1,175 @@
+/* Give the page a calm, readable foundation. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+	--deep-teal: #063f4a;
+	--soft-white: #f8f6ee;
+	--sunset-coral: #f47c59;
+	--button-text: #17343a;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: var(--deep-teal);
+	color: var(--soft-white);
+	font-family: 'DM Sans', sans-serif;
+}
+
+/* Keep the site name visible in a short, calm header. */
+.site-header {
+	padding: 18px 24px;
+	background: var(--deep-teal);
+	text-align: center;
+}
+
+.site-name {
+	margin: 0;
+	color: #a7ddd6;
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+}
+
+/* Use a light teal overlay to soften the park image and keep words clear. */
+.cta-banner {
+	min-height: 648px;
+	padding: 96px 24px;
+	background-image: linear-gradient(rgba(6, 63, 74, 0.48), rgba(6, 63, 74, 0.62)), url('img/cta-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	text-shadow: 0 2px 12px rgba(0, 35, 42, 0.35);
+}
+
+.cta-content {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.eyebrow {
+	margin: 0 0 24px;
+	color: #282c2b;
+	font-size: 0.82rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+h1 {
+	margin: 0;
+	font-family: 'Fraunces', Georgia, serif;
+	font-size: 4.5rem;
+	line-height: 1.04;
+}
+
+/* Keep the supporting copy comfortable to read. */
+.cta-description {
+	max-width: 590px;
+	margin: 30px auto 38px;
+	color: #e1f0eb;
+	font-size: 1.15rem;
+	line-height: 1.7;
+}
+
+/* Make the main action bright and easy to find. */
+.cta-button {
+	display: inline-block;
+	padding: 17px 30px;
+	border-radius: 4px;
+	background: var(--sunset-coral);
+	color: var(--button-text);
+	font-size: 1rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+	background: #ffad76;
+}
+
+/* Center two evenly sized columns beneath the banner. */
+.foster-info {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 88px 24px;
+	background: var(--soft-white);
+	color: var(--deep-teal);
+	text-align: center;
+}
+
+.info-column {
+	display: inline-block;
+	width: 48%;
+	vertical-align: middle;
+}
+
+.info-column img {
+	display: block;
+	width: 100%;
+	height: auto;
+  border-radius: 15px;
+}
+
+.info-copy {
+	padding: 0 40px;
+	text-align: left;
+}
+
+.info-copy .eyebrow {
+	margin-bottom: 18px;
+}
+
+h2 {
+	margin: 0 0 20px;
+	font-family: 'Fraunces', Georgia, serif;
+	font-size: 2.8rem;
+	line-height: 1.1;
+}
+
+.info-copy p:last-child {
+	margin: 0;
+	color: #315d63;
+	font-size: 1.05rem;
+	line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+	.cta-banner {
+		min-height: 720px;
+		padding: 72px 20px;
+	}
+
+	.cta-content {
+		padding-top: 0;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.cta-description {
+		font-size: 1rem;
+	}
+
+	.foster-info {
+		padding: 56px 20px;
+	}
+
+	.info-column {
+		display: block;
+		width: 100%;
+	}
+
+	.info-copy {
+		padding: 36px 0 0;
+	}
+
+	h2 {
+		font-size: 2.3rem;
+	}
+}
