@@ -138,6 +138,42 @@ h2 {
 	line-height: 1.7;
 }
 
+/* Create a footer to anchor the page and provide links. */
+.site-footer {
+	padding: 48px 24px;
+	background: var(--deep-teal);
+	color: var(--soft-white);
+	text-align: center;
+	border-top: 2px solid #a7ddd6;
+}
+
+.footer-content p {
+	margin: 12px 0;
+	font-size: 0.95rem;
+}
+
+.footer-content p:first-child {
+	margin-top: 0;
+	font-size: 1.1rem;
+	color: #a7ddd6;
+}
+
+.footer-links a {
+	color: #a7ddd6;
+	text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+	text-decoration: underline;
+}
+
+.footer-copyright {
+	margin-bottom: 0;
+	font-size: 0.85rem;
+	color: #7a9ba1;
+}
+
 @media (max-width: 600px) {
 	.cta-banner {
 		min-height: 720px;
